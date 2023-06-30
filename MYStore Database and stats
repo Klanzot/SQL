@@ -1,0 +1,37 @@
+ Check out my store database here. Notice how I've described each piece of code (first I created a store database, then displayed the database ordered by price).
+
+create table Store (id integer primary key, name TEXT, quantity INTEGER, price INTEGER, color TEXT, size TEXT );
+
+
+INSERT INTO Store VALUES ( 1, "T Shirts", 10, 5, "red", "small");
+
+INSERT INTO Store VALUES ( 2, "T Shirts", 10, 5, "red", "medium");
+
+INSERT INTO Store VALUES ( 3, "T Shirts", 10, 5, "black", "small");
+
+INSERT INTO Store VALUES ( 4, "T Shirts", 10, 5, "black", "medium");
+
+INSERT INTO Store VALUES ( 5, "Shorts", 8, 10, "denim", "medium");
+
+INSERT INTO Store VALUES ( 6, "Shorts", 8, 10, "denim", "small");
+
+INSERT INTO Store VALUES ( 7, "Shorts", 8, 10, "black", "small");
+
+INSERT INTO Store VALUES ( 8, "Shorts", 8, 10, "black", "medium");
+
+INSERT INTO Store VALUES ( 9, "Shorts", 8, 10, "gray", "small");
+
+INSERT INTO Store VALUES ( 10, "Shorts", 8, 10, "gray", "medium");
+
+INSERT INTO Store VALUES ( 11, "pants", 8, 10, "black", "small");
+
+INSERT INTO Store VALUES ( 12, "pants", 8, 10, "black", "medium");
+
+INSERT INTO Store VALUES ( 13, "pants", 8, 10, "gray", "small");
+
+INSERT INTO Store VALUES ( 14, "pants", 8, 10, "gray", "medium");
+
+
+SELECT * FROM Store ORDER BY price ASC;
+
+SELECT * FROM Store WHERE quantity >8;
